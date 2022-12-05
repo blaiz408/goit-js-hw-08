@@ -21,13 +21,13 @@ function onFormSubmit(event) {
     email,
     message,
   };
-  console.log(formDataElements);
 
   if (email.length === 0 || message.length === 0) {
     alert('Всі поля мають бути заповнені');
   } else {
     console.log(formDataElements);
     form.reset();
+    localStorage.clear();
   }
 }
 
